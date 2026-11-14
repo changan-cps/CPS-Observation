@@ -7,7 +7,7 @@ Shared assets for CPS web apps (Changan Rayong Plant).
 
 ## CPS Survey 2026
 
-- Survey: https://changan-cps.github.io/cps-observation/
-- Dashboard: https://changan-cps.github.io/cps-observation/?page=dash
+- Survey: https://changan-cps.github.io/CPS-Observation/
+- Dashboard: https://changan-cps.github.io/CPS-Observation/?page=dash
 
 `index.html` embeds the Apps Script web app; responses are stored in the Google Sheet.
