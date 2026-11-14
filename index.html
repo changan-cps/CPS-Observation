@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CPS Survey 2026</title>
+<link rel="icon" type="image/png" href="icons/cps_helmet_icon_192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0B1F8F">
+<meta name="apple-mobile-web-app-title" content="CPS Survey">
+<style>
+  html, body { margin: 0; height: 100%; background: #0B1F8F; }
+  iframe { border: 0; width: 100%; height: 100%; display: block; }
+</style>
+</head>
+<body>
+<iframe id="app" title="CPS Survey 2026" allow="clipboard-write"></iframe>
+<script>
+  // CPS Survey 2026 – Apps Script web app (data stays in the Google Sheet)
+  var EXEC = 'https://script.google.com/macros/s/AKfycbwdaaJSItzo0dqwvev_6ex0CBjZ0II3QOFSJLToLNEPxnt4O34gf6274--TG80ybt9H5g/exec';
+  var q = new URLSearchParams(location.search);
+  q.set('base', location.origin + location.pathname);
+  if (q.get('page') === 'dash') document.title = 'CPS Survey Dashboard';
+  document.getElementById('app').src = EXEC + '?' + q.toString();
+</script>
+</body>
+</html>
